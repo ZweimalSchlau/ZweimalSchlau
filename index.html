@@ -6,31 +6,62 @@
 <title>Zweimal Schlau</title>
 
 <style>
+
 body{
     margin:0;
     font-family:Arial,sans-serif;
-    background:#f5f8f2;
     text-align:center;
-    color:#2d4a22;
+
+    color:#5b4636;
+
+    background-image:url("zweimalschlau_logo.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
 }
 
 .container{
-    padding:50px 20px;
+    background:rgba(255,255,255,0.78);
+    max-width:900px;
+    margin:40px auto;
+    padding:40px;
+    border-radius:30px;
+    box-shadow:0 8px 30px rgba(0,0,0,0.12);
 }
 
 h1{
     font-size:48px;
+    color:#4a3a2c;
 }
 
 h2{
-    color:#4d7c3f;
+    color:#7a5a3b;
 }
 
-img{
-    max-width:800px;
-    width:90%;
+.main-image{
+    max-width:33%;
     border-radius:15px;
 }
+
+.leistungen{
+    text-align:left;
+    display:inline-block;
+    line-height:1.8;
+    font-size:18px;
+}
+
+.instagram-icon{
+    width:75px;
+    height:75px;
+    cursor:pointer;
+    transition:transform 0.3s ease;
+}
+
+.instagram-icon:hover{
+    transform:scale(1.15);
+}
+
 </style>
 </head>
 
@@ -40,7 +71,9 @@ img{
 
 <h1>🌿 ZweimalSchlau 🌿</h1>
 
-<img src="garten.gif" alt="Gartenarbeit" style="max-width:33%;">
+<img src="garten.gif"
+     alt="Gartenarbeit"
+     class="main-image">
 
 <h2>Unsere Website wächst gerade</h2>
 
@@ -48,15 +81,15 @@ img{
 Bald finden Sie hier professionelle Unterstützung rund um:
 </p>
 
-<p style="text-align:left; display:inline-block;">
+<div class="leistungen">
 ✓ Gartenpflege<br>
 ✓ Heckenschnitt<br>
 ✓ Rasenpflege<br>
 ✓ Gartengestaltung<br>
 ✓ Pflasterarbeiten
-</p>
+</div>
 
-<div style="margin-top:40px; text-align:center;">
+<div style="margin-top:40px;">
 
     <p>
         Schauen Sie bald wieder vorbei.
@@ -66,20 +99,13 @@ Bald finden Sie hier professionelle Unterstützung rund um:
         Oder erhalten Sie schon jetzt erste Einblicke auf unserem Instagram-Profil:
     </p>
 
-    <a href="https://www.instagram.com/zweimal.schlau/"
+    https://www.instagram.com/zweimal.schlau/"
        target="_blank"
        rel="noopener noreferrer">
 
         <img src="instagram.png"
-     alt="Instagram"
-     style="
-        width: 75px;
-        height: 75px;
-        transition: transform 0.3s ease;
-        cursor: pointer;
-     "
-     onmouseover="this.style.transform='scale(1.15)'"
-     onmouseout="this.style.transform='scale(1)'">
+             alt="Instagram"
+             class="instagram-icon">
 
     </a>
 
